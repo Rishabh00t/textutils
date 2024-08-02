@@ -1,0 +1,164 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+
+    <title>About Us - RTTextCraft.com</title>
+    
+    <style>
+      .hero {
+        background: #f8f9fa;
+        padding: 60px 0;
+      }
+      .hero h1 {
+        font-size: 2.5rem;
+      }
+      .section {
+        padding: 40px 0;
+      }
+      .footer {
+        background: #343a40;
+        color: #ffffff;
+        padding: 20px 0;
+        text-align: center;
+      }
+      .team-member {
+        margin-bottom: 30px;
+      }
+      .team-member img {
+        border-radius: 50%;
+        width: 150px;
+        height: 150px;
+        object-fit: cover;
+      }
+    </style>
+  </head>
+ 
+  <body>
+ 
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="#">RTTextCraft.com</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'about' %}">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'contact' %}">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+      <form class="form-inline ml-auto">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+      </form>
+    </nav>
+
+    <header class="hero text-center">
+      <div class="container">
+        <h1 class="display-4">About Textcraft</h1>
+      </div>
+    </header>
+
+    <div class="container">
+      <section class="section introduction">
+        <h2>Our Story</h2>
+        <p>Textcraft was founded with a simple mission: to make writing easier and more efficient for everyone. Our tools are designed to help you craft your words with precision and creativity, whether you're a professional writer, a student, or just someone who loves to express themselves through text.</p>
+        <p>Our core values are centered around innovation, simplicity, and accessibility. We believe in creating user-friendly tools that empower our users and make their writing process smoother.</p>
+      </section>
+
+      <section class="section history">
+        <h2>Our Journey</h2>
+        <div class="timeline">
+          <div class="timeline-item">
+            <h3>2010</h3>
+            <p>Textcraft was founded by a small team of passionate writers and developers. We started with a basic text editor and quickly gained traction among early adopters.</p>
+          </div>
+          <div class="timeline-item">
+            <h3>2013</h3>
+            <p>We introduced our first suite of advanced writing tools, including grammar checkers and style enhancers. This marked our expansion into the professional market.</p>
+          </div>
+          <div class="timeline-item">
+            <h3>2017</h3>
+            <p>Textcraft reached a milestone with over one million active users. We launched a major update that included cloud integration and collaborative writing features.</p>
+          </div>
+          <div class="timeline-item">
+            <h3>2020</h3>
+            <p>We expanded our services to include AI-driven writing assistants and personalized feedback. Our platform became more intuitive and powerful, helping users achieve their writing goals more effectively.</p>
+          </div>
+          <div class="timeline-item">
+            <h3>2024</h3>
+            <p>Textcraft continues to innovate with new features and improvements. We are committed to enhancing the writing experience and supporting our users in their creative journeys.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section team">
+        <h2>Our Team</h2>
+        <div class="row">
+          <div class="col-md-4 team-member text-center">
+            <img src="{% static 'R1.jpg' %}" alt="Team Member">
+
+            <h4>Rishabh Tiwari</h4>
+            <p>CEO & Founder</p>
+            <p>Rishabh Tiwariis the visionary behind Textcraft. With a background in software development and a passion for writing, she leads the team with dedication and innovation.</p>
+          </div>
+          <div class="col-md-4 team-member text-center">
+            <img src="{% static 'R1.jpg' %}" alt="Team Member">
+
+            <h4>Rishabh Tiwari</h4>
+            <p>Chief Technology Officer</p>
+            <p>Rishabh Tiwari all technological developments at Textcraft. His expertise in AI and machine learning helps drive the advancement of our writing tools.</p>
+          </div>
+          <div class="col-md-4 team-member text-center">
+            <img src="{% static 'R1.jpg' %}" alt="Team Member">
+
+            <h4>Rishabh Tiwari</h4>
+            <p>Product Manager</p>
+            <p>Rishabh Tiwari that our products meet user needs and exceed expectations. Her experience in project management and product design is invaluable to our success.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section services">
+        <h2>What We Do</h2>
+        <p>Textcraft offers a comprehensive suite of tools designed to enhance your writing experience:</p>
+        <ul>
+          <li><strong>Grammar and Spell Check:</strong> Our advanced algorithms detect and correct grammatical errors and typos, ensuring your writing is flawless.</li>
+          <li><strong>Style and Tone Analysis:</strong> Receive feedback on your writing style and tone, helping you to communicate more effectively.</li>
+          <li><strong>AI Writing Assistant:</strong> Get suggestions and improvements from our AI-driven assistant, tailored to your specific needs and preferences.</li>
+          <li><strong>Collaborative Writing:</strong> Work on documents with team members in real-time, making editing and feedback seamless.</li>
+          <li><strong>Cloud Integration:</strong> Access your documents from anywhere, anytime, with secure cloud storage.</li>
+        </ul>
+      </section>
+
+      <section class="section call-to-action text-center">
+        <h2>Join Us</h2>
+        <p>We invite you to become part of the Textcraft community. Whether you want to enhance your writing skills or join our team, there's a place for you here.</p>
+        <a class="btn btn-primary" href="{% url 'contact' %}">Contact Us</a>
+      </section>
+    </div>
+
+    <footer class="footer">
+      <p>&copy; 2024 TextCraft.in. All rights reserved.</p>
+    </footer>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+  </body>
+</html>
